@@ -10,3 +10,4 @@ sentence = requests.get("https://v2.jinrishici.com/sentence", headers=header)
 print(sentence.text)
 # poem is an dictionary of data, use print to know how to use it
 sentence.close()
+# need to parse json to what we need
