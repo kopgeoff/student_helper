@@ -69,6 +69,8 @@ class GetClassTable:
             # set kinds of errors and return different string
             # return str(e)
             return False
+        except:
+            return False
 
     def get_class(self, cid):
         try:
@@ -116,6 +118,8 @@ class GetClassTable:
             # set kinds of errors and return different string
             # return str(e)
             return False
+        except:
+            return False
 
     def stop_session(self):
         self.session.close()
@@ -157,6 +161,8 @@ class GetClassTable:
             return False
         # content = re.findall('var unitCount = 12;', self.text, re.DOTALL)
         # print(self.text)
+        except:
+            return False
 
 
 if __name__ == '__main__':
@@ -171,3 +177,4 @@ if __name__ == '__main__':
     else:
         pass
 # class plan
+# will add a profile in class to collect error message
