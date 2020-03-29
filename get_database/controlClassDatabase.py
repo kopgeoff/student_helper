@@ -2,7 +2,7 @@ import psycopg2
 
 
 try:
-    conn = psycopg2.connect(database="classplandb", user="simple", password="123456", host="127.0.0.1", port="3389")
+    conn = psycopg2.connect(database="classplandb", user="simple", password="123456", host="127.0.0.1", port="5432")
     cur = conn.cursor()
     try:
         cur.execute("select * from users where id='%s'" % "123456")
