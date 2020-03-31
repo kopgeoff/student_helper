@@ -7,3 +7,7 @@
 2020年3月25日 21点45分 author：meng
 
 现有获取课程表的基本框架，至于接口调用接口实现，待ui设计完成后执行。
+
+2020年3月31日 22点29分 author：meng
+
+对于getClassTable、controlClassDatabase、getOnePoem、settings加了注释，为后端人员调用
