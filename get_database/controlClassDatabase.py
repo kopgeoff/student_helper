@@ -24,4 +24,4 @@ try:
 except Exception as e:
     print(e)
 
-#
+# 如果不需要数据库，请忽略此文件，并建议使用sqlite
