@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c08891c8-31c8-43e8-b126-438a8bbf79cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/get_UI/classUI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_UI/mainUI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_UI/noteUI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_UI/poemUI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_UI/settingUI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_UI/testUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_UI/testUI.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +15,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get_UI/mainUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="384">
               <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -577,7 +571,56 @@
       <option name="project" value="LOCAL" />
       <updated>1585665101056</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="界面用图">
+      <created>1586401781385</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1586401781385</updated>
+    </task>
+    <task id="LOCAL-00025" summary="主界面UI，大致结构应该不需改变了">
+      <created>1586401826019</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1586401826019</updated>
+    </task>
+    <task id="LOCAL-00026" summary="课程表UI，待添加">
+      <created>1586401852074</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1586401852074</updated>
+    </task>
+    <task id="LOCAL-00027" summary="诗词显示UI，待添加">
+      <created>1586401880046</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1586401880046</updated>
+    </task>
+    <task id="LOCAL-00028" summary="备忘录UI，待添加">
+      <created>1586401896873</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1586401896873</updated>
+    </task>
+    <task id="LOCAL-00029" summary="设置，个人信息等UI，待添加">
+      <created>1586401930382</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1586401930382</updated>
+    </task>
+    <task id="LOCAL-00030" summary="测试UI，随时可更改，不重要">
+      <created>1586401958852</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1586401958852</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -591,14 +634,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25297618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25297618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39692307" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39692307" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -671,7 +713,14 @@
     <MESSAGE value="基本UI界面的构建，加载网页的ui" />
     <MESSAGE value="添加了较为详细的注释" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="界面用图" />
+    <MESSAGE value="主界面UI，大致结构应该不需改变了" />
+    <MESSAGE value="课程表UI，待添加" />
+    <MESSAGE value="诗词显示UI，待添加" />
+    <MESSAGE value="备忘录UI，待添加" />
+    <MESSAGE value="设置，个人信息等UI，待添加" />
+    <MESSAGE value="测试UI，随时可更改，不重要" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试UI，随时可更改，不重要" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/setting/semester.conf" />
@@ -816,7 +865,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get_UI/mainUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="384">
           <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
