@@ -2,9 +2,6 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from get_UI import poemUI, noteUI, classUI, settingUI
-import os
-
-host = os.path.dirname(os.path.dirname(os.path.abspath("mainUI.py")))
 
 
 class MainWidget(QWidget):
@@ -20,12 +17,8 @@ class MainWidget(QWidget):
         # 显示位置
         self.move(QPoint(int(desktop.width()*0.60), int(desktop.height()*0.04)))
         # 使用palette来设置背景图片，但测试发现，在子widget中设置无效
-        palette1 = QPalette()
-        palette1.setColor(palette1.Background, QColor(245, 245, 245))
-        palette1.setBrush(self.backgroundRole(),
-                          QBrush(QPixmap(host + "/resources/test.png").scaled(self.width(), self.height())))
-        # 上方的scaled是对图片自调整
-        self.setPalette(palette1)
+        self.setObjectName("MainWindow")
+        self.setStyleSheet("QWidget#MainWindow{background-color:transparent;}")
         self.setContentsMargins(0, 0, 0, 0)
         # 以上为设置主界面的位置、大小、背景等方法
 
@@ -37,7 +30,19 @@ class MainWidget(QWidget):
         self.oneLayout.setSpacing(0)
         # 第一层layout, 纵向
 
-        self.twoLayout1 = QStackedLayout(self)
+        self.twoWidget1 = QWidget(self)
+        self.twoWidget1.setObjectName("TopWidget")
+        self.twoWidget1.setStyleSheet("QWidget#TopWidget{background-color:transparent;}")
+        self.twoWidget1.setContentsMargins(0, 0, 0, 0)
+        self.twoWidget2 = QWidget(self)
+        self.twoWidget2.setObjectName("BottomWidget")
+        self.twoWidget2.setStyleSheet("QWidget#BottomWidget{background-color:#8090A0;"
+                                      "border-top:2px solid;border-color:#79879D;}")
+
+        # 设置下层layout的上边框显示，颜色和粗细待调整
+        self.twoWidget2.setContentsMargins(0, 0, 0, 0)
+
+        self.twoLayout1 = QStackedLayout()
         self.twoLayout1.setContentsMargins(0, 0, 0, 0)
 
         # 下方四个分别来自于不同的Widget，用于界面设计的解耦
@@ -80,12 +85,6 @@ class MainWidget(QWidget):
         self.twoLayout2.addWidget(self.button4)
         # 第二层下层layout，用于放置层叠布局切换按钮
 
-        self.twoWidget1 = QWidget()
-        self.twoWidget1.setContentsMargins(0, 0, 0, 0)
-        self.twoWidget2 = QWidget()
-        # 设置下层layout的上边框显示，颜色和粗细待调整
-        self.twoWidget2.setStyleSheet("border-top:2px solid;border-color:#79879D;")
-        self.twoWidget2.setContentsMargins(0, 0, 0, 0)
         self.twoWidget1.setLayout(self.twoLayout1)
         self.twoWidget2.setLayout(self.twoLayout2)
         # 由于layout不可直接嵌套layout，故使用两个Widget来接受layout
@@ -101,8 +100,9 @@ class MainWidget(QWidget):
         # 在窗口初始化的时候加入就可以了
         # self.window是QMainWindow()
         self.show()
+        self.twoWidget1.show()
+        self.twoWidget2.show()
         # self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)  # 无边框，置顶
-        # self.setAttribute(Qt.WA_TranslucentBackground)  # 透明背景色
 
     def show_widget(self, index):
         self.twoLayout1.setCurrentIndex(index)
