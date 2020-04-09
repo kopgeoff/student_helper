@@ -1,32 +1,45 @@
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtWebEngineWidgets import *
+import sys
+from PyQt5.QtWidgets import (QApplication, QWidget, QHBoxLayout,
+                             QFrame, QSplitter)
+from PyQt5.QtCore import Qt
 
 
-class Form(QWidget):
-    def __init__(self, parent=None):
-        super(Form, self).__init__(parent)
-        desktop = QApplication.desktop()
-        self.setMaximumSize(QSize(int(desktop.width()*0.35), int(desktop.height()*0.88)))
-        self.setMinimumSize(QSize(int(desktop.width()*0.35), int(desktop.height()*0.88)))
-        self.move(QPoint(int(desktop.width()*0.60), int(desktop.height()*0.04)))
-        tmp = QWebEngineView()
+class Example(QWidget):
 
-        buttonLayout1 = QVBoxLayout()
-        buttonLayout1.addWidget(tmp)
+    def __init__(self):
+        super().__init__()
 
-        mainLayout = QGridLayout()
-        mainLayout.addLayout(buttonLayout1, 1, 1)
+        self.initUI()
 
-        self.setLayout(mainLayout)
-        self.setWindowTitle("Hello Qt")
-        tmp.load(QUrl('D:/personal/index.html'))
-        tmp.show()
+    def initUI(self):
+        hbox = QHBoxLayout(self)
+
+        topleft = QFrame(self)
+        topleft.setFrameShape(QFrame.StyledPanel)
+
+        topright = QFrame(self)
+        topright.setFrameShape(QFrame.StyledPanel)
+
+        bottom = QFrame(self)
+        bottom.setFrameShape(QFrame.StyledPanel)
+
+        splitter1 = QSplitter(Qt.Horizontal)
+        splitter1.addWidget(topleft)
+        splitter1.addWidget(topright)
+
+        splitter2 = QSplitter(Qt.Vertical)
+        splitter2.addWidget(splitter1)
+        splitter2.addWidget(bottom)
+
+        hbox.addWidget(splitter2)
+        self.setLayout(hbox)
+
+        self.setGeometry(300, 300, 300, 200)
+        self.setWindowTitle('窗口分隔')
+        self.show()
 
 
 if __name__ == '__main__':
-    import sys
     app = QApplication(sys.argv)
-    screen = Form()
-    screen.show()
+    ex = Example()
     sys.exit(app.exec_())
