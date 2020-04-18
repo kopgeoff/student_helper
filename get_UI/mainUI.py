@@ -36,8 +36,9 @@ class MainWidget(QWidget):
         self.twoWidget1.setContentsMargins(0, 0, 0, 0)
         self.twoWidget2 = QWidget(self)
         self.twoWidget2.setObjectName("BottomWidget")
-        self.twoWidget2.setStyleSheet("QWidget#BottomWidget{background-color:#8090A0;"
-                                      "border-top:2px solid;border-color:#79879D;}")
+        self.twoWidget2.setStyleSheet("QWidget#BottomWidget{background-color:qlineargradient("
+                                      "spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 220, 255),"
+                                      " stop:1 rgba(0, 0, 255, 255));}")
 
         # 设置下层layout的上边框显示，颜色和粗细待调整
         self.twoWidget2.setContentsMargins(0, 0, 0, 0)
