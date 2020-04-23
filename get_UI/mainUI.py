@@ -25,7 +25,7 @@ class MainWidget(QWidget):
         self.oneLayout = QVBoxLayout()
         self.oneLayout.setContentsMargins(0, 0, 0, 0)
         # 由于该布局中仅有两个widget，故设置占比为9：1
-        self.oneLayout.setStretch(0, 9)
+        self.oneLayout.setStretch(0, 1)
         self.oneLayout.setStretch(1, 1)
         self.oneLayout.setSpacing(0)
         # 第一层layout, 纵向
@@ -37,8 +37,8 @@ class MainWidget(QWidget):
         self.twoWidget2 = QWidget(self)
         self.twoWidget2.setObjectName("BottomWidget")
         self.twoWidget2.setStyleSheet("QWidget#BottomWidget{background-color:qlineargradient("
-                                      "spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 220, 255),"
-                                      " stop:1 rgba(0, 0, 255, 255));}")
+                                      "spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(55, 140, 225, 255),"
+                                      " stop:1 rgba(255, 255, 255, 255));}")
 
         # 设置下层layout的上边框显示，颜色和粗细待调整
         self.twoWidget2.setContentsMargins(0, 0, 0, 0)
@@ -63,19 +63,23 @@ class MainWidget(QWidget):
         # layout内组件间隔为0，但与实际情况不符合，仍会有一小部分的间隔
 
         # 构建按钮，绑定事件
-        self.button1 = QPushButton("poem")
+        self.button1 = QPushButton(QIcon("./resources/poem1.png"), "")
+        self.button1.setIconSize(QSize(self.button1.width(), self.button1.height()))
         self.button1.clicked.connect(lambda: self.show_widget(0))
         self.button1.setFixedSize(QSize(int(width / 4), int(height / 14)))
         self.button1.setStyleSheet("border:none;font-size:16px;font-weight:bold;")
-        self.button2 = QPushButton("class")
+        self.button2 = QPushButton(QIcon("./resources/class1.png"), "")
+        self.button2.setIconSize(QSize(self.button2.width(), self.button2.height()))
         self.button2.clicked.connect(lambda: self.show_widget(1))
         self.button2.setFixedSize(QSize(int(width / 4), int(height / 14)))
         self.button2.setStyleSheet("border:none;font-size:16px;font-weight:bold;")
-        self.button3 = QPushButton("note")
+        self.button3 = QPushButton(QIcon("./resources/note1.png"), "")
+        self.button3.setIconSize(QSize(self.button3.width(), self.button3.height()))
         self.button3.clicked.connect(lambda: self.show_widget(2))
         self.button3.setFixedSize(QSize(int(width / 4), int(height / 14)))
         self.button3.setStyleSheet("border:none;font-size:16px;font-weight:bold;")
-        self.button4 = QPushButton("setting")
+        self.button4 = QPushButton(QIcon("./resources/me1.png"), "")
+        self.button4.setIconSize(QSize(self.button4.width(), self.button4.height()))
         self.button4.clicked.connect(lambda: self.show_widget(3))
         self.button4.setFixedSize(QSize(int(width / 4), int(height / 14)))
         self.button4.setStyleSheet("border:none;font-size:16px;font-weight:bold;")
@@ -100,9 +104,9 @@ class MainWidget(QWidget):
         self.setWindowTitle("Hello Qt")
         # 在窗口初始化的时候加入就可以了
         # self.window是QMainWindow()
-        self.show()
-        self.twoWidget1.show()
-        self.twoWidget2.show()
+        # self.show()
+        # self.twoWidget1.show()
+        # self.twoWidget2.show()
         # self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)  # 无边框，置顶
 
     def show_widget(self, index):
