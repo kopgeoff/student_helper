@@ -15,7 +15,7 @@ class SettingWidget(QWidget):
         f.addWidget(button)
         self.setLayout(f)
         self.setObjectName("Setting")
-        self.setStyleSheet(qss)
+        self.setStyleSheet("#Setting{background-color:#bbddf0}")
 
     def paintEvent(self, a0: QPaintEvent) -> None:
         opt = QStyleOption()

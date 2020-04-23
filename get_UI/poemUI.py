@@ -15,7 +15,7 @@ class PoemWidget(QWidget):
         f.addWidget(button)
         self.setLayout(f)
         self.setObjectName("Poem")
-        self.setStyleSheet(qss)
+        self.setStyleSheet("#Poem{background-color:#bbddf0}")
 
     def paintEvent(self, a0: QPaintEvent) -> None:
         opt = QStyleOption()

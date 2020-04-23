@@ -15,7 +15,7 @@ class ClassWidget(QWidget):
         f.addWidget(button)
         self.setLayout(f)
         self.setObjectName("Class")
-        self.setStyleSheet(qss)
+        self.setStyleSheet("#Class{background-color:#bbddf0}")
 
     def paintEvent(self, a0: QPaintEvent) -> None:
         opt = QStyleOption()

@@ -15,7 +15,7 @@ class NoteWidget(QWidget):
         f.addWidget(button)
         self.setLayout(f)
         self.setObjectName("Note")
-        self.setStyleSheet(qss)
+        self.setStyleSheet("#Note{background-color:#bbddf0}")
 
     def paintEvent(self, a0: QPaintEvent) -> None:
         opt = QStyleOption()
