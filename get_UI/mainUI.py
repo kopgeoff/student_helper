@@ -9,11 +9,11 @@ class MainWidget(QWidget):
         super().__init__()
         desktop = QApplication.desktop()
         # 宽和高，经过多次测试获得，在测试机上看起来最舒服的一种大小
-        width = int(desktop.width()*0.35)
-        height = int(desktop.height()*0.88)
+        self.width = int(desktop.width()*0.35)
+        self.height = int(desktop.height()*0.88)
         # 不可变化大小
-        self.setMaximumSize(QSize(width, height))
-        self.setMinimumSize(QSize(width, height))
+        self.setMaximumSize(QSize(self.width, self.height))
+        self.setMinimumSize(QSize(self.width, self.height))
         # 显示位置
         self.move(QPoint(int(desktop.width()*0.60), int(desktop.height()*0.04)))
         # 使用palette来设置背景图片，但测试发现，在子widget中设置无效
@@ -25,7 +25,7 @@ class MainWidget(QWidget):
         self.oneLayout = QVBoxLayout()
         self.oneLayout.setContentsMargins(0, 0, 0, 0)
         # 由于该布局中仅有两个widget，故设置占比为9：1
-        self.oneLayout.setStretch(0, 1)
+        self.oneLayout.setStretch(0, 9)
         self.oneLayout.setStretch(1, 1)
         self.oneLayout.setSpacing(0)
         # 第一层layout, 纵向
@@ -62,27 +62,39 @@ class MainWidget(QWidget):
         self.twoLayout2.setSpacing(0)
         # layout内组件间隔为0，但与实际情况不符合，仍会有一小部分的间隔
 
+        fontId = QFontDatabase.addApplicationFont("./fonts/汉仪糯米团简.ttf")
+        fontName = QFontDatabase.applicationFontFamilies(fontId)[0]
+        # 导入字体，使界面更美观
+
         # 构建按钮，绑定事件
-        self.button1 = QPushButton(QIcon("./resources/poem1.png"), "")
-        self.button1.setIconSize(QSize(self.button1.width(), self.button1.height()))
+        self.button1 = QPushButton("诗")#QIcon("./resources/poem1.png"), "")
+        self.button1.setFont(QFont(fontName))
+        # self.button1.setIconSize(QSize(self.button1.width(), self.button1.height()))
         self.button1.clicked.connect(lambda: self.show_widget(0))
-        self.button1.setFixedSize(QSize(int(width / 4), int(height / 14)))
-        self.button1.setStyleSheet("border:none;font-size:16px;font-weight:bold;")
-        self.button2 = QPushButton(QIcon("./resources/class1.png"), "")
-        self.button2.setIconSize(QSize(self.button2.width(), self.button2.height()))
+        self.button1.setFixedSize(QSize(int(self.width / 4), int(self.height / 14)))
+        self.button1.setStyleSheet("border:none;font-size:%spx;font-weight:bold;color:#477CF1" %
+                                   int(self.height / 20))
+        self.button2 = QPushButton("课")
+        self.button2.setFont(QFont(fontName))
+        # self.button2.setIconSize(QSize(self.button2.width(), self.button2.height()))
         self.button2.clicked.connect(lambda: self.show_widget(1))
-        self.button2.setFixedSize(QSize(int(width / 4), int(height / 14)))
-        self.button2.setStyleSheet("border:none;font-size:16px;font-weight:bold;")
-        self.button3 = QPushButton(QIcon("./resources/note1.png"), "")
-        self.button3.setIconSize(QSize(self.button3.width(), self.button3.height()))
+        self.button2.setFixedSize(QSize(int(self.width / 4), int(self.height / 14)))
+        self.button2.setStyleSheet("border:none;font-size:%spx;font-weight:bold;color:#477CF1" %
+                                   int(self.height / 20))
+        self.button3 = QPushButton("记")
+        self.button3.setFont(QFont(fontName))
+        # self.button3.setIconSize(QSize(self.button3.width(), self.button3.height()))
         self.button3.clicked.connect(lambda: self.show_widget(2))
-        self.button3.setFixedSize(QSize(int(width / 4), int(height / 14)))
-        self.button3.setStyleSheet("border:none;font-size:16px;font-weight:bold;")
-        self.button4 = QPushButton(QIcon("./resources/me1.png"), "")
-        self.button4.setIconSize(QSize(self.button4.width(), self.button4.height()))
+        self.button3.setFixedSize(QSize(int(self.width / 4), int(self.height / 14)))
+        self.button3.setStyleSheet("border:none;font-size:%spx;font-weight:bold;color:#477CF1" %
+                                   int(self.height / 20))
+        self.button4 = QPushButton("我")
+        self.button4.setFont(QFont(fontName))
+        # self.button4.setIconSize(QSize(self.button4.width(), self.button4.height()))
         self.button4.clicked.connect(lambda: self.show_widget(3))
-        self.button4.setFixedSize(QSize(int(width / 4), int(height / 14)))
-        self.button4.setStyleSheet("border:none;font-size:16px;font-weight:bold;")
+        self.button4.setFixedSize(QSize(int(self.width / 4), int(self.height / 14)))
+        self.button4.setStyleSheet("border:none;font-size:%spx;font-weight:bold;color:#477CF1" %
+                                   int(self.height / 20))
         # 布局添加按钮
         self.twoLayout2.addWidget(self.button1)
         self.twoLayout2.addWidget(self.button2)
