@@ -3,10 +3,6 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 
 
-urls = "./resources/1.jpg"
-qss = "#Note{border-image: url(%s);}" % urls
-
-
 class NoteWidget(QWidget):
     def __init__(self):
         super().__init__()
