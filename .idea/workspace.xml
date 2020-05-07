@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c08891c8-31c8-43e8-b126-438a8bbf79cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_UI/db/database.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_database/sqlitedatabase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_UI/mainUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_UI/mainUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_UI/classUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_UI/classUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_UI/noteUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_UI/noteUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_UI/poemUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_UI/poemUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_UI/settingUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_UI/settingUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_poem/getOnePoem.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_poem/getOnePoem.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +23,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_UI/poemUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="17" column="60" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="60" />
+            <state relative-caret-position="9">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#1#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -28,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_UI/noteUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="48">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -37,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get_UI/settingUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="72">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -52,8 +59,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_UI/classUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="153">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_UI/mainUI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="125" column="39" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="39" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -61,14 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/get_UI/mainUI.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_database/sqlitedatabase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="125" column="39" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1344">
+              <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -105,17 +121,18 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/get_classtable/getClassTable.py" />
         <option value="$PROJECT_DIR$/get_database/controlClassDatabase.py" />
-        <option value="$PROJECT_DIR$/get_poem/getOnePoem.py" />
         <option value="$PROJECT_DIR$/get_UI/testUI.py" />
         <option value="$PROJECT_DIR$/setting/settings.py" />
         <option value="$PROJECT_DIR$/get_UI/bottom.py" />
         <option value="$PROJECT_DIR$/get_UI/bottomUI.py" />
-        <option value="$PROJECT_DIR$/get_UI/poemUI.py" />
-        <option value="$PROJECT_DIR$/get_UI/noteUI.py" />
-        <option value="$PROJECT_DIR$/get_UI/settingUI.py" />
-        <option value="$PROJECT_DIR$/get_UI/classUI.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/get_UI/mainUI.py" />
+        <option value="$PROJECT_DIR$/get_poem/getOnePoem.py" />
+        <option value="$PROJECT_DIR$/get_UI/poemUI.py" />
+        <option value="$PROJECT_DIR$/get_database/sqlitedatabase.py" />
+        <option value="$PROJECT_DIR$/get_UI/classUI.py" />
+        <option value="$PROJECT_DIR$/get_UI/noteUI.py" />
+        <option value="$PROJECT_DIR$/get_UI/settingUI.py" />
       </list>
     </option>
   </component>
@@ -157,6 +174,24 @@
               <item name="student_helper" type="b2602c69:ProjectViewProjectNode" />
               <item name="student_helper" type="462c0819:PsiDirectoryNode" />
               <item name="get_UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="student_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="student_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="get_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="student_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="student_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="get_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="student_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="student_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="get_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -274,15 +309,15 @@
       <method v="2" />
     </configuration>
     <configuration name="getOnePoem" type="PythonConfigurationType" factoryName="Python">
-      <module name="student-helper" />
+      <module name="student_helper" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/get_poem" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_poem/getOnePoem.py" />
@@ -328,6 +363,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setting/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sqlitedatabase" type="PythonConfigurationType" factoryName="Python">
+      <module name="student_helper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/get_database" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_database/sqlitedatabase.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -388,6 +444,7 @@
       <item itemvalue="Python.settings" />
       <item itemvalue="Python.testUI" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.sqlitedatabase" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -400,13 +457,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585069778064</updated>
-    </task>
-    <task id="LOCAL-00001" summary="创建">
-      <created>1585069957476</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1585069957476</updated>
     </task>
     <task id="LOCAL-00002" summary="获取课程表部分">
       <created>1585069996578</created>
@@ -730,7 +780,28 @@
       <option name="project" value="LOCAL" />
       <updated>1587650153728</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="字体文件">
+      <created>1587782905629</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1587782905629</updated>
+    </task>
+    <task id="LOCAL-00049" summary="主界面更新">
+      <created>1587782929174</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1587782929174</updated>
+    </task>
+    <task id="LOCAL-00050" summary="conf">
+      <created>1587782940519</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1587782940522</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView">
@@ -750,8 +821,8 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42923078" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3923077" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -825,8 +896,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="基本UI界面的构建，加载网页的ui" />
-    <MESSAGE value="添加了较为详细的注释" />
     <MESSAGE value="界面用图" />
     <MESSAGE value="主界面UI，大致结构应该不需改变了" />
     <MESSAGE value="课程表UI，待添加" />
@@ -841,7 +910,6 @@
     <MESSAGE value="设置界面背景" />
     <MESSAGE value="诗词界面背景" />
     <MESSAGE value="主界面ui背景" />
-    <MESSAGE value="conf" />
     <MESSAGE value="配置文件" />
     <MESSAGE value="pycharm项目配置文件" />
     <MESSAGE value="主界面部分修改" />
@@ -850,7 +918,10 @@
     <MESSAGE value="修改了界面主题颜色，且添加了按钮小图标" />
     <MESSAGE value="按钮小图标" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="字体文件" />
+    <MESSAGE value="主界面更新" />
+    <MESSAGE value="conf" />
+    <option name="LAST_COMMIT_MESSAGE" value="conf" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/setting/semester.conf" />
@@ -869,16 +940,6 @@
           <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_poem/getOnePoem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -955,30 +1016,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/get_poem/getOnePoem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/get_UI/poemUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="60" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="60" />
+        <state relative-caret-position="9">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#1#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_UI/noteUI.py">
+    <entry file="file://$PROJECT_DIR$/get_UI/db/database.db">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="100" lean-forward="true" selection-start-column="100" selection-end-column="100" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_UI/settingUI.py">
+    <entry file="file://$PROJECT_DIR$/get_database/sqlitedatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="1344">
+          <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_UI/mainUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="125" column="39" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="39" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -987,18 +1062,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get_UI/classUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="153">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_UI/noteUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_UI/mainUI.py">
+    <entry file="file://$PROJECT_DIR$/get_UI/settingUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="125" column="39" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="39" />
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
