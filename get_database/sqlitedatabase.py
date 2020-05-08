@@ -6,12 +6,16 @@ def load_db():
     cursor = conn.cursor()
     try:
         cursor.execute("select * from classplan")
-        values = cursor.fetchall()
-        print(values)
+        try:
+            cursor.execute("select * from note")
+        except:
+            cursor.execute("create table note(content varchar(100))")
     except:
         cursor.execute("create table classplan(cname varchar(50),position varchar(3),week varchar(53),pname varchar(50))")
     finally:
         conn.close()
+
+
 def getclass(index):
     s = ""
     for i in range(int(index)):
@@ -66,3 +70,31 @@ def delete_item(cname):
             return True
         else:
             return False
+
+
+def load_note():
+    conn = sqlite3.connect("./db/database.db")
+    cursor = conn.cursor()
+    flag = []
+    try:
+        cursor.execute("select * from note")
+        flag = cursor.fetchall()
+    except:
+        flag = []
+    finally:
+        conn.close()
+        return flag
+
+
+def update_note(list1):
+    conn = sqlite3.connect("./db/database.db")
+    cursor = conn.cursor()
+    try:
+        cursor.execute("delete from note")
+        for i in list1:
+            cursor.execute("insert into note values('%s')"%i)
+        conn.commit()
+    except:
+        print("error")
+    finally:
+        conn.close()
