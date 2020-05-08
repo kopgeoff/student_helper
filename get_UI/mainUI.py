@@ -2,6 +2,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from get_UI import poemUI, noteUI, classUI, settingUI
+from get_database import sqlitedatabase
 
 
 class MainWidget(QWidget):
@@ -129,6 +130,7 @@ class MainWidget(QWidget):
 if __name__ == '__main__':
     import sys
     app = QApplication(sys.argv)
+    sqlitedatabase.load_db()
     screen = MainWidget()
     screen.show()
     sys.exit(app.exec_())
