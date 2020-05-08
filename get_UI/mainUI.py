@@ -88,18 +88,18 @@ class MainWidget(QWidget):
         self.button3.setFixedSize(QSize(int(self.width / 4), int(self.height / 14)))
         self.button3.setStyleSheet("border:none;font-size:%spx;font-weight:bold;color:#477CF1" %
                                    int(self.height / 20))
-        self.button4 = QPushButton("我")
-        self.button4.setFont(QFont(fontName))
+        #self.button4 = QPushButton("我")
+        #self.button4.setFont(QFont(fontName))
         # self.button4.setIconSize(QSize(self.button4.width(), self.button4.height()))
-        self.button4.clicked.connect(lambda: self.show_widget(3))
-        self.button4.setFixedSize(QSize(int(self.width / 4), int(self.height / 14)))
-        self.button4.setStyleSheet("border:none;font-size:%spx;font-weight:bold;color:#477CF1" %
-                                   int(self.height / 20))
+        #self.button4.clicked.connect(lambda: self.show_widget(3))
+        #self.button4.setFixedSize(QSize(int(self.width / 4), int(self.height / 14)))
+        #self.button4.setStyleSheet("border:none;font-size:%spx;font-weight:bold;color:#477CF1" %
+        #                           int(self.height / 20))
         # 布局添加按钮
         self.twoLayout2.addWidget(self.button1)
         self.twoLayout2.addWidget(self.button2)
         self.twoLayout2.addWidget(self.button3)
-        self.twoLayout2.addWidget(self.button4)
+        #self.twoLayout2.addWidget(self.button4)
         # 第二层下层layout，用于放置层叠布局切换按钮
 
         self.twoWidget1.setLayout(self.twoLayout1)
